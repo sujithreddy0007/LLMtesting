@@ -1,0 +1,63 @@
+Question,User Answer,Model,Score,Feedback
+Enter the question: What is AI?,i thibk is ia an human being,mistral,5," Score: 4
+Feedback: While the intention is clear, there are some spelling errors. The correct response should be ""I think it is artificial intelligence"". Keep practicing to improve spelling and clarity! Well done for attempting the question."
+Enter the question: What is AI?,i thibk is ia an human being,llama2,5,"
+Score: 1/5
+Feedback: Your answer is partially correct. While AI can be used to perform tasks that were previously thought to be the exclusive domain of humans, such as playing chess or recognizing faces, it is not a human being itself. AI is a machine learning algorithm that is designed to perform specific tasks, but it does not have consciousness or the ability to feel emotions like a human does."
+Enter the question: What is AI?,i thibk is ia an human being,gemma,5,"## Score: 4/5
+
+## Feedback: 
+The user's answer is very close to the correct answer, with only minor spelling errors."
+what is the fundamentals subjects to learn ai,in my point of view to learn ai we need to start from fundamentals like python numpy pandas and ml dl i think so,mistral,10," Score: 7
+Feedback: Your response is close to the correct one. You've mentioned Python, which is indeed a crucial programming language for AI, as well as key libraries such as NumPy and Pandas. However, you didn't include specific AI-related topics like Machine Learning (ML), Deep Learning (DL), Computer Vision, or other important AI concepts. Keep learning and expanding your knowledge!"
+what is the fundamentals subjects to learn ai,in my point of view to learn ai we need to start from fundamentals like python numpy pandas and ml dl i think so,llama2,10,"
+Score: 6
+
+Feedback: While the user has identified some important fundamentals for learning AI, their answer could be more comprehensive. In particular, they have focused only on Python, NumPy, and Pandas, which are indeed important libraries for data manipulation and analysis in AI. However, there are many other subjects that are crucial for a solid understanding of AI, such as machine learning, deep learning, neural networks, computer vision, and more. Additionally, the user has not mentioned any specific programming languages or tools that are commonly used in AI, which is an important aspect to consider."
+what is the fundamentals subjects to learn ai,in my point of view to learn ai we need to start from fundamentals like python numpy pandas and ml dl i think so,gemma,10,"**Score:** 8 out of 10
+
+**Feedback:** The user's answer demonstrates a solid understanding of the fundamental subjects required to learn AI, aligning with the correct answer. However, it lacks specific mention of deep learning and neural networks, which are crucial components of AI."
+what is the fundamentals subjects to learn ai, in my point of view to learn ai we need to start from fundamentals like python numpy pandas and ml dl i think so,mistral,10," Score: 8
+Feedback: Your answer is quite close to the correct one. You've mentioned Python, numpy, pandas, ML (Machine Learning), and DL (Deep Learning). However, for a complete understanding of AI, you should also include topics like Neural Networks, Deep Learning Computer Vision, and possibly some important libraries or tools used in these fields. Keep learning and refining your knowledge!"
+what is the fundamentals subjects to learn ai, in my point of view to learn ai we need to start from fundamentals like python numpy pandas and ml dl i think so,llama2,10,"
+Score: 7
+
+The user has provided a good starting point for learning AI, focusing on fundamental programming languages and libraries such as Python, NumPy, and Pandas. However, the correct answer provides more specific subjects to learn, including machine learning, deep learning, neural networks, computer vision, and some important libraries and frameworks. While the user's answer is a good starting point, it may not provide the comprehensive coverage of AI topics as the correct answer.
+
+Feedback:
+
+* While your answer is a good starting point, the correct answer provides more specific subjects to learn in order to become proficient in AI.
+* By focusing on the fundamental programming languages and libraries, you will have a solid foundation for learning more advanced AI topics in the future."
+what is the fundamentals subjects to learn ai, in my point of view to learn ai we need to start from fundamentals like python numpy pandas and ml dl i think so,gemma,10,"## Score: 8 out of 10
+
+## Feedback: 
+The user's answer demonstrates a solid understanding of the fundamental subjects required to learn AI, including key concepts like Python, NumPy, Pandas, Machine Learning, Deep Learning, Neural Networks, and Computer Vision. The user accurately highlights the importance of starting from the basics."
+ what is the fundamentals subjects to learn ai,in my point of view to learn ai we need to start from fundamentals like python numpy pandas and ml dl i think so,mistral,10," Score: 8
+Feedback: Your response is quite close to the correct answer. You've mentioned Python, which is a crucial programming language in AI, and you also referred to machine learning (ML) and deep learning (DL). However, you missed out on specific areas like neural networks, computer vision, and some important libraries such as numpy and pandas. Keep exploring these topics to gain a comprehensive understanding of AI!"
+ what is the fundamentals subjects to learn ai,in my point of view to learn ai we need to start from fundamentals like python numpy pandas and ml dl i think so,llama2,10,"
+Score: 6
+
+Your answer is partially correct. You have identified some important fundamentals for learning AI, including Python, NumPy, and Pandas. However, the list you provided is not exhaustive, and there are many other important subjects to learn in order to become proficient in AI. Specifically, deep learning, computer vision, and some important libraries and frameworks, such as TensorFlow and PyTorch, were not included in your list.
+
+Feedback:
+
+* To learn AI, it is essential to have a strong foundation in programming languages like Python and R. These languages are commonly used in AI applications and provide the necessary tools for building and implementing algorithms.
+* In addition to programming languages, it is important to familiarize yourself with key concepts in machine learning, deep learning, and computer vision. These subjects form the backbone of modern AI research and applications."
+ what is the fundamentals subjects to learn ai,in my point of view to learn ai we need to start from fundamentals like python numpy pandas and ml dl i think so,gemma,10,"## Score: 8 out of 10
+
+## Feedback: 
+The user answer demonstrates a strong understanding of the fundamental subjects required to learn AI, including key concepts like Python, NumPy, Pandas, Machine Learning, Deep Learning, Neural Networks, and Computer Vision."
+ what is the fundamentals subjects to learn ai,in my point of view to learn ai we need to start from fundamentals like python numpy pandas and ml dl i think so,mistral,10," Score: 7.5
+Feedback: Your answer is close to the correct one, you've mentioned Python, NumPy, and Pandas which are essential for AI. However, machine learning (ML), deep learning (DL), computer vision, and possibly R programming language were also important aspects that you missed mentioning. Keep refining your knowledge!",1.01
+ what is the fundamentals subjects to learn ai,in my point of view to learn ai we need to start from fundamentals like python numpy pandas and ml dl i think so,llama2,10,"
+Score: 7/10
+
+Your answer is partially correct. You have identified some important fundamentals subjects for learning AI, including programming languages like Python and libraries like NumPy and Pandas. However, you did not include the other subjects mentioned in the correct answer, such as machine learning, deep learning, neural networks, and computer vision. These are also crucial parts of AI that one should learn to become proficient in the field.
+
+Feedback:
+
+* To fully understand AI, it's important to have a solid foundation in programming languages like Python and R, as well as popular libraries like NumPy and Pandas.
+* Additionally, learning about machine learning, deep learning, neural networks, and computer vision can provide a more comprehensive understanding of AI and its applications.",1.6
+ what is the fundamentals subjects to learn ai,in my point of view to learn ai we need to start from fundamentals like python numpy pandas and ml dl i think so,gemma,10,"**Score:** 8 out of 10
+
+**Feedback:** The user's answer demonstrates a solid understanding of the fundamental subjects required to learn AI, aligning with the correct answer. However, it lacks some elaboration on deep learning and computer vision concepts.",0.64
