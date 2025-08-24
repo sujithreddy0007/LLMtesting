@@ -1,61 +1,56 @@
 from flask import Flask, request, render_template_string
-from backend.evaluator import evaluate_answer  # Import evaluator function
+import grpc
+import evaluator_pb2 as evaluator_pb2
+import evaluator_pb2_grpc as evaluator_pb2_grpc
 
 app = Flask(__name__)
 
-# Simple HTML template
 TEMPLATE = """
 <!DOCTYPE html>
 <html>
-<head>
-    <title>LLM Evaluator</title>
-</head>
-<body style="font-family: Arial; margin: 30px;">
-    <h1>Local LLM Answer Evaluator</h1>
+<head><title>LLM Evaluator</title></head>
+<body>
+<h1>Answer Evaluator</h1>
+<form method="post">
+  <label>Question:</label><br>
+  <textarea name="question" rows="2" cols="50" required></textarea><br><br>
+  <label>User Answer:</label><br>
+  <textarea name="user_answer" rows="3" cols="50" required></textarea><br><br>
+  <label>Total Marks:</label><br>
+  <input type="number" name="marks" required><br><br>
+  <input type="submit" value="Evaluate">
+</form>
 
-    <form method="post">
-        <label>Question:</label><br>
-        <textarea name="question" rows="2" cols="80" required></textarea><br><br>
-
-        <label>Correct Answer:</label><br>
-        <textarea name="correct_answer" rows="3" cols="80" required></textarea><br><br>
-
-        <label>User Answer:</label><br>
-        <textarea name="user_answer" rows="3" cols="80" required></textarea><br><br>
-
-        <label>Total Marks:</label><br>
-        <input type="number" name="marks" required><br><br>
-
-        <input type="submit" value="Evaluate">
-    </form>
-
-    {% if results %}
-        <h2>Evaluation Results:</h2>
-        {% for model, output, runtime in results %}
-            <div style="margin-bottom: 20px; padding: 10px; border: 1px solid #ccc;">
-                <b>Model:</b> {{ model }}<br>
-                <pre>{{ output }}</pre>
-                <b>Time Taken:</b> {{ runtime }} seconds
-            </div>
-        {% endfor %}
-    {% endif %}
+{% if result %}
+<h2>Result:</h2>
+<b>Score:</b> {{ result.score }} / {{ marks }}<br>
+<b>Time Taken:</b> {{ result.time_taken }} seconds<br>
+<b>Feedback:</b> {{ result.feedback }}<br>
+{% endif %}
 </body>
 </html>
 """
 
 @app.route("/", methods=["GET", "POST"])
 def index():
-    results = None
+    result = None
+    marks = None
     if request.method == "POST":
         question = request.form["question"]
-        correct_answer = request.form["correct_answer"]
         user_answer = request.form["user_answer"]
         marks = int(request.form["marks"])
 
-        results = evaluate_answer(question, user_answer, correct_answer, marks)
+        # Connect to gRPC server
+        channel = grpc.insecure_channel("localhost:50051")
+        stub = evaluator_pb2_grpc.EvaluatorStub(channel)
+        request_proto = evaluator_pb2.EvaluateRequest(
+            question=question,
+            user_answer=user_answer,
+            marks=marks
+        )
+        result = stub.Evaluate(request_proto)
 
-    return render_template_string(TEMPLATE, results=results)
-
+    return render_template_string(TEMPLATE, result=result, marks=marks)
 
 if __name__ == "__main__":
     app.run(debug=True)

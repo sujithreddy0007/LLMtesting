@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+service Evaluator {
+  rpc Evaluate(EvaluateRequest) returns (EvaluateResponse);
+}
+
+message EvaluateRequest {
+  string question = 1;
+  string user_answer = 2;
+  int32 marks = 3;
+}
+
+message EvaluateResponse {
+  int32 score = 1;
+  float time_taken = 2;
+  string feedback = 3;
+}

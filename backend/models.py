@@ -1,6 +1,5 @@
-
 MODELS = [
-    "mistral",   # fast & efficient
-    "llama2",    # more detailed
-    "gemma"      # balanced
+    "gemma2:9b",        
+    "deepseek-r1:8b",
+    "mistral:7b"
 ]
